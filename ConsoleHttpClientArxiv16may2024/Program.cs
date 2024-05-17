@@ -10,7 +10,8 @@ namespace ConsoleHttpClientArxiv16may2024
 
             using var client = new HttpClient();
 
-            string word = "electron";
+            //string word = "electron";
+            string word = "proton";
 
             string requestUri = "http://export.arxiv.org/api/query?search_query=all:" + word;
 
@@ -20,7 +21,7 @@ namespace ConsoleHttpClientArxiv16may2024
 
             string xmlString = await response.Content.ReadAsStringAsync();
 
-            //await Console.Out.WriteLineAsync(resp);
+            await Console.Out.WriteLineAsync(xmlString);
 
             // Create empty file in VS -> Paste Special -> Paste XML as class
 

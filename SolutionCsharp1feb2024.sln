@@ -35,15 +35,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleHttpClientLoripsum1f
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleHttpClientTheCatApi9feb2024", "ConsoleHttpClientTheCatApi9feb2024\ConsoleHttpClientTheCatApi9feb2024.csproj", "{5991AAC4-F1F3-4AA0-BF38-030E09AB5B8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHttpClientDisney16may2024", "ConsoleHttpClientDisney16may2024\ConsoleHttpClientDisney16may2024.csproj", "{7DDA2043-F3EB-4002-90ED-FDFED7F03A1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleHttpClientDisney16may2024", "ConsoleHttpClientDisney16may2024\ConsoleHttpClientDisney16may2024.csproj", "{7DDA2043-F3EB-4002-90ED-FDFED7F03A1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHttpClientDisney17may2024", "ConsoleHttpClientDisney17may2024\ConsoleHttpClientDisney17may2024.csproj", "{C42CA650-2C03-4683-9890-BF2554744311}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleHttpClientDisney17may2024", "ConsoleHttpClientDisney17may2024\ConsoleHttpClientDisney17may2024.csproj", "{C42CA650-2C03-4683-9890-BF2554744311}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHttpClientArchive16may2024", "ConsoleHttpClientArchive16may2024\ConsoleHttpClientArchive16may2024.csproj", "{5E66E4A6-EB8A-421E-A3AA-4C5A9408CA17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleHttpClientArchive16may2024", "ConsoleHttpClientArchive16may2024\ConsoleHttpClientArchive16may2024.csproj", "{5E66E4A6-EB8A-421E-A3AA-4C5A9408CA17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHttpClientArchive17may2024", "ConsoleHttpClientArchive17may2024\ConsoleHttpClientArchive17may2024.csproj", "{C345D558-6378-4D8E-8EC7-3658BA3C4785}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleHttpClientArchive17may2024", "ConsoleHttpClientArchive17may2024\ConsoleHttpClientArchive17may2024.csproj", "{C345D558-6378-4D8E-8EC7-3658BA3C4785}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHttpClientArxiv16may2024", "ConsoleHttpClientArxiv16may2024\ConsoleHttpClientArxiv16may2024.csproj", "{865DB7AF-2B5C-42FD-A1A7-AD71E66921E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleHttpClientArxiv16may2024", "ConsoleHttpClientArxiv16may2024\ConsoleHttpClientArxiv16may2024.csproj", "{865DB7AF-2B5C-42FD-A1A7-AD71E66921E0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleHttpClientDictionary17may2024", "ConsoleHttpClientDictionary17may2024\ConsoleHttpClientDictionary17may2024.csproj", "{67B24370-FB04-40A7-BDD4-4082CF5B150D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHttpClientDictionary18may2024", "ConsoleHttpClientDictionary18may2024\ConsoleHttpClientDictionary18may2024.csproj", "{356EB572-A6C4-4234-97AD-34ACC2863491}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +139,14 @@ Global
 		{865DB7AF-2B5C-42FD-A1A7-AD71E66921E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{865DB7AF-2B5C-42FD-A1A7-AD71E66921E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{865DB7AF-2B5C-42FD-A1A7-AD71E66921E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67B24370-FB04-40A7-BDD4-4082CF5B150D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67B24370-FB04-40A7-BDD4-4082CF5B150D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67B24370-FB04-40A7-BDD4-4082CF5B150D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67B24370-FB04-40A7-BDD4-4082CF5B150D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{356EB572-A6C4-4234-97AD-34ACC2863491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{356EB572-A6C4-4234-97AD-34ACC2863491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{356EB572-A6C4-4234-97AD-34ACC2863491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{356EB572-A6C4-4234-97AD-34ACC2863491}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
