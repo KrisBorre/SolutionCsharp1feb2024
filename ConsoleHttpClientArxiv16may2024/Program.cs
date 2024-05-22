@@ -6,12 +6,14 @@ namespace ConsoleHttpClientArxiv16may2024
     {
         static async Task Main(string[] args)
         {
+            // arXiv.org hosts more than two million scholarly articles
             //https://info.arxiv.org/help/api/user-manual.html
 
             using var client = new HttpClient();
 
             //string word = "electron";
-            string word = "proton";
+            //string word = "proton";
+            string word = "neutron";
 
             string requestUri = "http://export.arxiv.org/api/query?search_query=all:" + word;
 
@@ -49,6 +51,18 @@ namespace ConsoleHttpClientArxiv16may2024
 
             /*
             value = ArXiv Query: search_query=all:electron&id_list=&start=0&max_results=10
+            length = 10
+            items = System.Object[]
+            */
+
+            /*
+            value = ArXiv Query: search_query=all:proton&id_list=&start=0&max_results=10
+            length = 10
+            items = System.Object[]
+            */
+
+            /*
+            value = ArXiv Query: search_query=all:neutron&id_list=&start=0&max_results=10
             length = 10
             items = System.Object[]
             */

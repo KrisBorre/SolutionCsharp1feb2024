@@ -4,6 +4,7 @@
     {
         static async Task Main(string[] args)
         {
+            // arXiv.org hosts more than two million scholarly articles
             //https://info.arxiv.org/help/api/user-manual.html
 
             using var client = new HttpClient();
@@ -425,6 +426,8 @@ theory as a function of electron density.
 </feed>
 
 */
+
+            // https://json2csharp.com/code-converters/xml-to-csharp results in an invalid pattern. Hint: kick Latex code out.
 
             Console.Read();
         }
