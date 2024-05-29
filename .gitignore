@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/dictionary29may2024.db
+/dictionary29may2024.db-shm
+/dictionary29may2024.db-wal
