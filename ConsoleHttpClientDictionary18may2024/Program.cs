@@ -10,8 +10,11 @@ namespace ConsoleHttpClientDictionary18may2024
 
             //string word = "hello";
             //string word = "electron";
-            string word = "proton";
-
+            //string word = "proton";
+            //string word = "function";
+            //string word = "science";
+            //string word = "cells";
+            string word = "query";
 
             DictionaryDbContext23may2024 dbContext = new DictionaryDbContext23may2024();
             //dbContext.Database.EnsureDeleted();
