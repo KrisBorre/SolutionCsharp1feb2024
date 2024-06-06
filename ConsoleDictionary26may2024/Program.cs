@@ -91,6 +91,7 @@ namespace ConsoleDictionary25may2024
             list.Add("gnarl"); // page 165
             list.Add("baleful"); // page 245
             list.Add("amenability"); // page 248
+            list.Add("amenable"); // page 248
             list.Add("austere"); // page 256
    
 
