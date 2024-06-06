@@ -57,11 +57,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleHttpClientArxiv22may
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleHttpClientDictionary24may2024", "ConsoleHttpClientDictionary24may2024\ConsoleHttpClientDictionary24may2024.csproj", "{B77CD86C-6359-481D-9280-982DBE25CDD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryDatabaseDictionary25may2024", "LibraryDatabaseDictionary25may2024\LibraryDatabaseDictionary25may2024.csproj", "{421523BC-5273-49E4-B76B-720B416FDFDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryDatabaseDictionary25may2024", "LibraryDatabaseDictionary25may2024\LibraryDatabaseDictionary25may2024.csproj", "{421523BC-5273-49E4-B76B-720B416FDFDF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleDictionary25may2024", "ConsoleDictionary25may2024\ConsoleDictionary25may2024.csproj", "{8329C49B-0F2F-4D22-990A-35CEE01C40BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHttpClientDictionary25may2024", "ConsoleHttpClientDictionary25may2024\ConsoleHttpClientDictionary25may2024.csproj", "{DF9BC8D2-B99E-4475-8F8D-2F70F33264B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleHttpClientDictionary25may2024", "ConsoleHttpClientDictionary25may2024\ConsoleHttpClientDictionary25may2024.csproj", "{DF9BC8D2-B99E-4475-8F8D-2F70F33264B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleDictionary26may2024", "ConsoleDictionary26may2024\ConsoleDictionary26may2024.csproj", "{F03B6D8F-669D-45E4-A86A-50955CCF9506}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryHttpClientDictionary26may2024", "LibraryHttpClientDictionary26may2024\LibraryHttpClientDictionary26may2024.csproj", "{036EFF29-1106-4C4B-8D71-279E2B6CB348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHttpClientDictionary26may2024", "ConsoleHttpClientDictionary26may2024\ConsoleHttpClientDictionary26may2024.csproj", "{2F00BB8F-00B2-47CB-BF44-FF5FB987FB04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -189,6 +195,18 @@ Global
 		{DF9BC8D2-B99E-4475-8F8D-2F70F33264B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF9BC8D2-B99E-4475-8F8D-2F70F33264B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF9BC8D2-B99E-4475-8F8D-2F70F33264B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F03B6D8F-669D-45E4-A86A-50955CCF9506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F03B6D8F-669D-45E4-A86A-50955CCF9506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F03B6D8F-669D-45E4-A86A-50955CCF9506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F03B6D8F-669D-45E4-A86A-50955CCF9506}.Release|Any CPU.Build.0 = Release|Any CPU
+		{036EFF29-1106-4C4B-8D71-279E2B6CB348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036EFF29-1106-4C4B-8D71-279E2B6CB348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036EFF29-1106-4C4B-8D71-279E2B6CB348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036EFF29-1106-4C4B-8D71-279E2B6CB348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F00BB8F-00B2-47CB-BF44-FF5FB987FB04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F00BB8F-00B2-47CB-BF44-FF5FB987FB04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F00BB8F-00B2-47CB-BF44-FF5FB987FB04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F00BB8F-00B2-47CB-BF44-FF5FB987FB04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
