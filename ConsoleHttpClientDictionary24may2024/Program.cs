@@ -45,7 +45,7 @@ namespace ConsoleHttpClientDictionary24may2024
             Console.WriteLine(sql3);
             foreach (EnglishWord englishWord in list3)
             {
-                Console.WriteLine(englishWord.Word);
+                Console.WriteLine("Word: " + englishWord.Word);
             }
 
             Console.WriteLine();
@@ -57,6 +57,7 @@ namespace ConsoleHttpClientDictionary24may2024
             if (list4.Count == 1)
             {
                 EnglishWord englishWord = list4[0];
+                Console.WriteLine("Word: " + englishWord.Word);
                 int wordId = englishWord.WordID;
 
                 var columnName1 = "WordId";
@@ -66,7 +67,7 @@ namespace ConsoleHttpClientDictionary24may2024
                 List<EnglishMeaning> list5 = dbContext.Meanings.FromSqlRaw(sql5, columnValue1).ToList();
                 foreach (EnglishMeaning meaning in list5)
                 {
-                    Console.WriteLine(meaning.PartOfSpeech);
+                    Console.WriteLine("Part of speech: " + meaning.PartOfSpeech);
                     englishWord.Meanings.Add(meaning);
 
                     string sql6 = $"SELECT * FROM Definitions WHERE MeaningID = (SELECT MeaningID FROM Meanings WHERE {columnName1} = @columnValue);";
@@ -76,7 +77,8 @@ namespace ConsoleHttpClientDictionary24may2024
                         if (meaning.MeaningID == definition.MeaningID)
                         {
                             meaning.Definitions.Add(definition);
-                            Console.WriteLine(definition.Definition);
+                            Console.WriteLine("Definition: " + definition.Definition);
+                            Console.WriteLine("Example: " + definition.Example);
                         }
                     }
 
@@ -87,7 +89,7 @@ namespace ConsoleHttpClientDictionary24may2024
                         if (meaning.MeaningID == synonym.MeaningID)
                         {
                             meaning.Synonyms.Add(synonym);
-                            Console.WriteLine(synonym.Synonym);
+                            Console.WriteLine("Synonym: " + synonym.Synonym);
                         }
                     }
 
@@ -98,7 +100,7 @@ namespace ConsoleHttpClientDictionary24may2024
                         if (meaning.MeaningID == antonym.MeaningID)
                         {
                             meaning.Antonyms.Add(antonym);
-                            Console.WriteLine(antonym.Antonym);
+                            Console.WriteLine("Antonym: " + antonym.Antonym);
                         }
                     }
 
