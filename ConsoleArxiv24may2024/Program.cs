@@ -72,7 +72,7 @@ namespace ConsoleArxiv24may2024
             A. M. Hamza (3)
             */
 
-            int earlier = allArticles.FindAll(a => a.DateTime1 < a.DateTime2).Count; 
+            int earlier = allArticles.FindAll(a => a.DateTime1 < a.DateTime2).Count;
             Console.WriteLine("earlier = " + earlier);
             int same = allArticles.FindAll(a => a.DateTime1 == a.DateTime2).Count;
             Console.WriteLine("same = " + same);
@@ -83,6 +83,45 @@ namespace ConsoleArxiv24may2024
             earlier = 0
             same = 566
             later = 199
+            */
+
+            List<Article> githubArticles = allArticles.FindAll(a => a.Abstract.Contains("github"));
+
+            foreach (var article in githubArticles)
+            {
+                string[] titles = article.Title.Split("\n");
+                Console.WriteLine(titles[0]);
+                Console.WriteLine(article.Abstract + "\n");
+            }
+
+            /*           
+            DGoT: Dynamic Graph of Thoughts for Scientific Abstract Generation
+            https://github.com/JayceNing/DGoT
+            Python
+
+            Large Language Models are Fixated by Red Herrings: Exploring Creative
+            https://github.com/TaatiTeam/OCW
+            Python
+            
+            MORE: Simultaneous Multi-View 3D Object Recognition and Pose Estimation
+            https://github.com/SubhadityaMukherjee/more_mvcnn
+            Python
+
+            Putting visual object recognition in context
+            https://github.com/kreimanlab/Put-In-Context
+            Matlab
+
+            Unsupervised Domain Attention Adaptation Network for Caricature
+            https://github.com/KeleiHe/DAAN
+            Python
+
+            Genome-on-Diet: Taming Large-Scale Genomic Analyses via Sparsified
+            https://github.com/CMU-SAFARI/Genome-on-Diet
+            Roff
+
+            Identifying recombination hotspots using population genetic data
+            http://github.com/auton1/LDhot
+            C++
             */
 
             Console.Read();
