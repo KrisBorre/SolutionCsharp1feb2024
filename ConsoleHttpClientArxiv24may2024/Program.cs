@@ -25,7 +25,13 @@ namespace ConsoleHttpClientArxiv24may2024
             // string word = "p53";
             // string word = "genetics";
             // string word = "neuroscience";
-            string word = "evolution";
+            // string word = "evolution";
+            // string word = "gene+algorithms";
+            // string word = "nonlinear+dynamics";
+            // string word = "brain+p53";
+            string word = "electron";
+            string word2 = "proton";
+            string word3 = "neutron";
 
             string requestUri = "http://export.arxiv.org/api/query?search_query=all:" + word;
 

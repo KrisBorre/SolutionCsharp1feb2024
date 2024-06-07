@@ -21,8 +21,8 @@ namespace LibraryArxiv24may2024
 
         public List<Link> Links { get; set; }
 
-        public DateTime DateTime1 { get; set; }
+        public DateTime DateTime1 { get; set; } // submission date?
 
-        public DateTime DateTime2 { get; set; } 
+        public DateTime DateTime2 { get; set; } // announcement date?
     }
 }
