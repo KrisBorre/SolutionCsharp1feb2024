@@ -126,13 +126,75 @@ namespace ConsoleArxiv24may2024
             Console.WriteLine(number_of_articles / ((double)allArticles.Count));
             // 1.0 -> 0,199 // 0.95 -> 0,201 // 0.90 -> 0,271 // 0.85 -> 0,415 // 0.80 -> 0,511        
 
-            Console.WriteLine("20 percent of abstracts contain all the title words.");
+            Console.WriteLine("\n20 percent of abstracts contain all the title words.");
 
             Console.WriteLine("27 percent of abstracts contain 90 percent of the title words.");
 
             Console.WriteLine("41 percent of abstracts contain 85 percent of the title words.");
 
-            Console.WriteLine("51 percent of abstracts contain 80 percent of the title words.");
+            Console.WriteLine("51 percent of abstracts contain 80 percent of the title words.\n");
+
+            int brackets = 0;
+
+            foreach (Article article in allArticles)
+            {
+                if ((article.Abstract.Contains("(1998") || article.Abstract.Contains("(201")) && article.Abstract.Contains(')'))
+                {
+                    brackets++;
+                    Console.WriteLine(article.Abstract);
+                }
+            }
+
+            Console.WriteLine(brackets / ((double)allArticles.Count));
+
+            /*
+            We present the second-order phase transition from a band insulator to metal
+            that is induced by a strong magnetic field. The magnetic-field dependences of
+            the magnetization and energy band gap of a crystalline silicon immersed in a
+            magnetic field are investigated by means of the nonperturbative
+            magnetic-field-containing relativistic tight-binding approximation method
+            [Phys. Rev. B 97, 195135 (2018)].
+
+            This paper discusses asymptotic theory for penalized spline estimators in
+            generalized additive models. The purpose of this paper is to establish the
+            asymptotic bias and variance as well as the asymptotic normality of the
+            penalized spline estimators proposed by Marx and Eilers (1998).
+
+            A time dependence of a metal abundance of supernova remnant (SNR) have been
+            found by Hughes et al. (1998).
+
+            The time-dependent surface flux method developed for the description of
+            electronic spectra [L. Tao and A. Scrinzi, New J. Phys. 14, 013021 (2012); A.
+            Scrinzi, New J. Phys. 14, 085008 (2012)] is extended to treat dissociation and
+            dissociative ionization processes of H2+ interacting with strong laser pulses.
+
+            A range of a priori hypotheses about the evolution of modern and archaic
+            genomes are further evaluated and tested. In addition to the well-known
+            splits/introgressions involving Neanderthal genes into out-of- Africa people,
+            or Denisovan genes into Oceanians, a further series of archaic splits and
+            hypotheses proposed in Waddell et al. (2011) are considered in detail.
+
+            In a recent paper, Hirsch (2018) proposes to attribute the credit for a
+            co-authored paper to the {\alpha}-author--the author with the highest
+            h-index--regardless of his or her actual contribution, effectively reducing the
+            role of the other co-authors to zero.
+
+            Dispersal of species to find a more favorable habitat is important in
+            population dynamics. Dispersal rates evolve in response to the relative success
+            of different dispersal strategies. In a simplified deterministic treatment (J.
+            Dockery, V. Hutson, K. Mischaikow, et al., J. Math. Bio. 37, 61 (1998)) of two
+            species which differ only in their dispersal rates the slow species always
+            dominates.
+
+            It has recently been shown that a parametrically driven oscillator with Kerr
+            nonlinearity yields a Schr\"odinger cat state via quantum adiabatic evolution
+            through its bifurcation point and a network of such nonlinear oscillators can
+            be used for solving combinatorial optimization problems by bifurcation-based
+            adiabatic quantum computation [H. Goto, Sci. Rep. \textbf{6}, 21686 (2016)].
+            */
+
+            Console.WriteLine("\nOnly 1 percent of abstracts use references.");
+            Console.WriteLine("99 percent of abstracts use no references.");
 
             Console.Read();
         }
