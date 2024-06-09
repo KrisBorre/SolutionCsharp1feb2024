@@ -99,6 +99,41 @@ namespace ConsoleArxiv24may2024
             C++
             */
 
+            Console.WriteLine("\n\nLet's check if the abstract and the title use the same words.");
+            int number_of_articles = 0;
+            foreach (Article article in allArticles)
+            {
+                string[] array = article.Title.Split(' ');
+                int used = 0;
+
+                foreach (var titleWord in array)
+                {
+                    if (article.Abstract.Contains(titleWord, StringComparison.InvariantCultureIgnoreCase))
+                    {
+                        used++;
+                    }
+                }
+
+                double ratio = used / ((double)array.Length);
+
+                if (ratio == 1.0)
+                {
+                    Console.WriteLine(article.Title);
+                    number_of_articles++;
+                }
+            }
+
+            Console.WriteLine(number_of_articles / ((double)allArticles.Count));
+            // 1.0 -> 0,199 // 0.95 -> 0,201 // 0.90 -> 0,271 // 0.85 -> 0,415 // 0.80 -> 0,511        
+
+            Console.WriteLine("20 percent of abstracts contain all the title words.");
+
+            Console.WriteLine("27 percent of abstracts contain 90 percent of the title words.");
+
+            Console.WriteLine("41 percent of abstracts contain 85 percent of the title words.");
+
+            Console.WriteLine("51 percent of abstracts contain 80 percent of the title words.");
+
             Console.Read();
         }
     }
