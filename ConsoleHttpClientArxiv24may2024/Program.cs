@@ -30,8 +30,12 @@ namespace ConsoleHttpClientArxiv24may2024
             // string word = "nonlinear+dynamics";
             // string word = "brain+p53";
             // string word = "electron";
-            string word = "proton";
-            string word3 = "neutron";
+            // string word = "proton";
+            // string word = "carbon+nanotubes";
+            // string word = "nanotubes+chiral+indices+conduction+band";
+            // string word = "SWCNT+solvent+immersion+Raman";
+
+            string word = "neutron";
 
             string requestUri = "http://export.arxiv.org/api/query?search_query=all:" + word;
 

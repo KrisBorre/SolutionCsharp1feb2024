@@ -2,102 +2,102 @@
 using LibraryHttpClientDictionary26may2024;
 using Newtonsoft.Json;
 
-namespace ConsoleHttpClientDictionary26may2024
+namespace ConsoleHttpClientDictionary27may2024
 {
     internal class Program
     {
         static async Task Main(string[] args)
         {
-            // https://dictionaryapi.dev/
-
-            // The unwritten rules of PhD research by M. Petre and G. Rugg
+            Console.WriteLine("The 7 habits by Stephen Covey");
 
             List<string> list = new List<string>();
-            //list.Add("scant");
-            //list.Add("tacit");
-            //list.Add("apocryphal");
-            //list.Add("fiddly");
-            //list.Add("insidious");
-            //list.Add("fiendish"); // page 1
-            //list.Add("gloom"); // page 1
-            ////list.Add("adject"); // page 2 // Not found
-            //list.Add("drudgery"); // page 2
-            //list.Add("disparaging"); // page 2
-            //list.Add("discourse"); // page 2
-            ////list.Add("sordidly"); // page 3 // Not found
-            //list.Add("sordid"); // page 3
-            //list.Add("digression"); // page 4
-            //list.Add("digress"); // page 4
-            //list.Add("erudition"); // page 4
-            //list.Add("erudite"); // page 4
-            //list.Add("scrutinized"); // page 6
-            //list.Add("scrutiny"); // page 6
-            //list.Add("cognizance"); // page 7
-            //list.Add("strands"); // page 7
-            //list.Add("strand"); // page 7
-            //list.Add("anthology"); // page 8
-            //list.Add("woefully"); // page 9
-            //list.Add("woeful"); // page 9
-            //list.Add("stroppy"); // page 10
-            ////list.Add("substantiation"); // page 12 // Not found
-            //list.Add("substantiate"); // page 12
-            //list.Add("taxonomy"); // page 15
-            //list.Add("seminal"); // page 16
-            //list.Add("stocks"); // page 17
-            //list.Add("probation"); // page 19
-            //list.Add("taught"); // page 22
-            //list.Add("teach"); // page 22
-            //list.Add("scrounge"); // page 28
-            //list.Add("inviolable"); // page 30
-            //list.Add("inoculation"); // page 35
-            //list.Add("inoculate"); // page 35
-            //list.Add("couch"); // page 37
-            ////list.Add("elicitation"); // page 39 // Not found
-            //list.Add("elicit"); // page 39
-            //list.Add("fastidious"); // page 39
-            //list.Add("collation"); // page 41
-            //list.Add("pathological"); // page 44
-            //list.Add("remunerated"); // page 46
-            ////list.Add("renumerate"); // page 46 // Not found
-            //list.Add("liability"); // page 48
-            //list.Add("beleaguers"); // page 49
-            //list.Add("beleaguer"); // page 49
-            //list.Add("sulking"); // page 51
-            //list.Add("sulky"); // page 51
-            //list.Add("forestall"); // page 52
-            //list.Add("pesky"); // page 53
-            //list.Add("incisive"); // page 59
-            //list.Add("incise"); // page 59
-            //list.Add("dissonance"); // page 61
-            //list.Add("dissonant"); // page 61
-            //list.Add("incentive"); // page 61
-            //list.Add("inundated"); // page 62
-            //list.Add("inundate"); // page 62
-            //list.Add("trawls"); // page 72
-            //list.Add("trawl"); // page 72
-            //list.Add("sufferance"); // page 73
-            //list.Add("fastidious"); // page 81
-            //list.Add("fastidiously"); // page 81 // Not found
-            //list.Add("inflammatory"); // page 83
-            //list.Add("seminal"); // page 83
-            ////list.Add("voraciously"); // page 85 // Not found
-            //list.Add("voracious"); // page 85 
-            //list.Add("hare"); // page 85
-            //list.Add("astute"); // page 87
-            //list.Add("kudos"); // page 90
-            //list.Add("antecedents"); // page 140
-            //list.Add("antecedent"); // page 140
-            //list.Add("tacitly"); // page 146
-            //list.Add("tacit"); // page 146
-            //list.Add("gnarled"); // page 165
-            //list.Add("gnarl"); // page 165
-            //list.Add("baleful"); // page 245
-            ////list.Add("amenability"); // page 248 // Not found
-            //list.Add("amenable"); // page 248
-            //list.Add("austere"); // page 256
+            // page 17
+            Console.WriteLine("We must look at the lens through which we see the world, as well as at the world we see, and that the lens itself shapes how we interpret the world");
+            //list.Add("look"); // Not found
+            //list.Add("lens");
+            //list.Add("through");
+            //list.Add("world");
+            //list.Add("see");
+            //list.Add("shapes");
+            //list.Add("interpret");
+
+            // page 32
+            Console.WriteLine("Paradigms are inseparable from character.");
+            Console.WriteLine("Being is seeing in the human dimension.");
+            Console.WriteLine("What we see is highly interrelated to what we are.");
+            //list.Add("interrelated");
+
+            Console.WriteLine("The way we see the problem is the problem.");
+            //list.Add("way");
+            //list.Add("problem");
+
+            Console.WriteLine("If you want to have a happy marriage, be the kind of person who generates positive energy and sidesteps negative energy rather than empowering it.");
+            //list.Add("happy");
+            //list.Add("marriage");
+            //list.Add("generates");
+            //list.Add("energy");
+            //list.Add("sidesteps");
+            //list.Add("empowering");
+
+            Console.WriteLine("Be more understanding, empathic, consistent, loving.");
+            //list.Add("understanding");
+            //list.Add("empathic");
+            //list.Add("consistent");
+            //list.Add("loving");
+
+
+
+            // page 78
+            Console.WriteLine("Look at the word responsibility - response ability - the ability to choose your response.");
+            //list.Add("responsibility");
+            //list.Add("ability");
+            //list.Add("choose");
+            //list.Add("response");
+
+            Console.WriteLine("Highly proactive people recognize that responsibility.");
+            //list.Add("proactive");
+            //list.Add("recognize");
+
+            Console.WriteLine("Proactive people do not blame circumstances, conditions, or conditioning for their behavior.");
+            //list.Add("blame");
+            //list.Add("circumstances");
+            //list.Add("conditions");
+            //list.Add("conditioning");
+            //list.Add("behavior");
+
+            Console.WriteLine("Proactive people can carry their own weather with them.");
+            Console.WriteLine("Whether it rains or shines makes no difference to proactive people.");
+            Console.WriteLine("Proactive people are value driven.");
+            //list.Add("value");
+            //list.Add("driven");
+
+            // page 79
+            Console.WriteLine("The ability to subordinate an impulse to a value is the essence of the proactive person.");
+            //list.Add("subordinate");
+            //list.Add("impulse");
+            //list.Add("essence");
+
+            Console.WriteLine("Proactive people are driven by values - carefully thought about, selected, and internalized values.");
+            //list.Add("thought"); // Not found
+            //list.Add("selected");
+            //list.Add("internalized");
+
+            Console.WriteLine("Use your resourcefulness and initiative.");
+            //list.Add("resourcefulness");
+            //list.Add("initiative");
+
+            Console.WriteLine("Proactive language:");
+            Console.WriteLine("Let's look at our alternatives.");
+            //list.Add("alternatives");
+
+            Console.WriteLine("I can choose a different approach.");
+            //list.Add("different");
+            //list.Add("approach");
 
             DictionaryDbContext24may2024 dbContext = new DictionaryDbContext24may2024();
             dbContext.Database.EnsureCreated();
+
+            // https://dictionaryapi.dev/
 
             for (int l = 0; l < list.Count; l++)
             {
