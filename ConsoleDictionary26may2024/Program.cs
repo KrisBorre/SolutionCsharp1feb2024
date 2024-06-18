@@ -2,7 +2,7 @@
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 
-namespace ConsoleDictionary25may2024
+namespace ConsoleDictionary26may2024
 {
     internal class Program
     {
