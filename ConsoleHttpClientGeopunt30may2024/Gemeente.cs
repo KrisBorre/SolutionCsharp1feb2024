@@ -1,0 +1,18 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ConsoleHttpClientGeopunt30may2024
+{
+    public class Gemeente
+    {
+        public Gemeente()
+        {
+
+        }
+
+        [Key]
+        public int GemeenteID { get; set; }
+
+        [Required]
+        public string Naam { get; set; }
+    }
+}

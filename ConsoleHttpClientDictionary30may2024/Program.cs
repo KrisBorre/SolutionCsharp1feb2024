@@ -2,97 +2,60 @@
 using LibraryHttpClientDictionary26may2024;
 using Newtonsoft.Json;
 
-namespace ConsoleHttpClientDictionary27may2024
+namespace ConsoleHttpClientDictionary30may2024
 {
     internal class Program
     {
         static async Task Main(string[] args)
         {
-            Console.WriteLine("The 7 habits of highly effective people by Stephen R. Covey");
+            Console.WriteLine("Discipline and Punish: The birth of the prison by Michel Foucault.");
 
             List<string> list = new List<string>();
-            // page 17
-            Console.WriteLine("We must look at the lens through which we see the world, as well as at the world we see, and that the lens itself shapes how we interpret the world");
-            //list.Add("look"); // Not found
-            //list.Add("lens");
-            //list.Add("through");
-            //list.Add("world");
-            //list.Add("see");
-            //list.Add("shapes");
-            //list.Add("interpret");
+            //// page 8
+            //list.Add("discretion");
+            //list.Add("pillory");
+            //// page 9
+            //list.Add("accustom"); // Not found
+            //list.Add("exemplary");
+            //// page 10
+            //list.Add("disavowal");
+            //list.Add("expiation");
+            //// page 11
+            //list.Add("deprive");
+            //// page 30
+            //list.Add("decrepit");
+            //list.Add("discourses");
+            //// page 32
+            //list.Add("reprimand");
+            //list.Add("pecuniary");
+            //// page 34
+            //list.Add("effaced");
+            //// page 35
+            //list.Add("inscribed");
+            //list.Add("denunciations");
+            //// page 36
+            //list.Add("writ");
+            //// page 37
+            //list.Add("casuistry");
+            //// page 39
+            //list.Add("perjury");
+            //// page 40
+            //list.Add("equivocal");
+            //// page 41
+            //list.Add("exculpation"); // Not found
+            //// page 42
+            //list.Add("pursuance");
+            //// page 43
+            //list.Add("meted");
+            //// page 48
+            //list.Add("punctilious");
+            //// page 50
+            //list.Add("indissociably"); // Not found
+            //// page 127
+            //list.Add("atonement");
+            //list.Add("expiation"); // see page 10
+            //// page 128
 
-            // page 32
-            Console.WriteLine("Paradigms are inseparable from character.");
-            Console.WriteLine("Being is seeing in the human dimension.");
-            Console.WriteLine("What we see is highly interrelated to what we are.");
-            //list.Add("interrelated");
-
-            Console.WriteLine("The way we see the problem is the problem.");
-            //list.Add("way");
-            //list.Add("problem");
-
-            Console.WriteLine("If you want to have a happy marriage, be the kind of person who generates positive energy and sidesteps negative energy rather than empowering it.");
-            //list.Add("happy");
-            //list.Add("marriage");
-            //list.Add("generates");
-            //list.Add("energy");
-            //list.Add("sidesteps");
-            //list.Add("empowering");
-
-            Console.WriteLine("Be more understanding, empathic, consistent, loving.");
-            //list.Add("understanding");
-            //list.Add("empathic");
-            //list.Add("consistent");
-            //list.Add("loving");
-
-
-
-            // page 78
-            Console.WriteLine("Look at the word responsibility - response ability - the ability to choose your response.");
-            //list.Add("responsibility");
-            //list.Add("ability");
-            //list.Add("choose");
-            //list.Add("response");
-
-            Console.WriteLine("Highly proactive people recognize that responsibility.");
-            //list.Add("proactive");
-            //list.Add("recognize");
-
-            Console.WriteLine("Proactive people do not blame circumstances, conditions, or conditioning for their behavior.");
-            //list.Add("blame");
-            //list.Add("circumstances");
-            //list.Add("conditions");
-            //list.Add("conditioning");
-            //list.Add("behavior");
-
-            Console.WriteLine("Proactive people can carry their own weather with them.");
-            Console.WriteLine("Whether it rains or shines makes no difference to proactive people.");
-            Console.WriteLine("Proactive people are value driven.");
-            //list.Add("value");
-            //list.Add("driven");
-
-            // page 79
-            Console.WriteLine("The ability to subordinate an impulse to a value is the essence of the proactive person.");
-            //list.Add("subordinate");
-            //list.Add("impulse");
-            //list.Add("essence");
-
-            Console.WriteLine("Proactive people are driven by values - carefully thought about, selected, and internalized values.");
-            //list.Add("thought"); // Not found
-            //list.Add("selected");
-            //list.Add("internalized");
-
-            Console.WriteLine("Use your resourcefulness and initiative.");
-            //list.Add("resourcefulness");
-            //list.Add("initiative");
-
-            Console.WriteLine("Proactive language:");
-            Console.WriteLine("Let's look at our alternatives.");
-            //list.Add("alternatives");
-
-            Console.WriteLine("I can choose a different approach.");
-            //list.Add("different");
-            //list.Add("approach");
 
             DictionaryDbContext24may2024 dbContext = new DictionaryDbContext24may2024();
             dbContext.Database.EnsureCreated();
