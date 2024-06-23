@@ -18,130 +18,156 @@ namespace ConsoleHttpClientArxiv28may2024
 
             // Dimensional modeling
             List<string> list = new List<string>();
-            list.Add("Dimensional+modeling");
-            list.Add("Business+Dimensional+Lifecycle");
-            list.Add("data+warehouse+design");
-            list.Add("star+like+schema+snowflake+schema");
-            list.Add("Slowly+Changing+Dimensions");
-            list.Add("Data+Information+Knowledge");
+            //list.Add("Dimensional+modeling");
+            //list.Add("Business+Dimensional+Lifecycle");
+            //list.Add("data+warehouse+design");
+            //list.Add("star+like+schema+snowflake+schema");
+            //list.Add("Slowly+Changing+Dimensions");
+            //list.Add("Data+Information+Knowledge");
+            //list.Add("data+modeling");
+            //list.Add("star+schema+data+modeling");
+            //list.Add("Kimball+modeling");
+            //list.Add("fact+tables");
+            //list.Add("dimensional+tables");
+            //list.Add("create+marts");
+            //list.Add("star+schema+kimball+approach");
+            //list.Add("Dimensional+modeling+physics");
+            //list.Add("data+warehouse+design+physics");
+            //list.Add("Data+Information+Knowledge+physics");
+            //list.Add("Kimball+modeling+physics");
+            //list.Add("marts+physics");
+            //list.Add("star+schema+kimball+approach+physics");
+            //list.Add("Data+Warehouse+Toolkit+Practical+Techniques+Building+Dimensional");
+            //list.Add("Designing+Implementing+Data+Warehouse");
 
-            foreach (string word in list)
+            bool hasDuplicates = false;
+            var grouped = list.GroupBy(s => s);
+
+            foreach (var group in grouped)
             {
-                string requestUri = "http://export.arxiv.org/api/query?search_query=all:" + word;
+                if (group.Count() > 1) hasDuplicates = true;
+            }
 
-                HttpResponseMessage response = await client.GetAsync(requestUri);
-
-                response.EnsureSuccessStatusCode();
-
-                string xmlString = await response.Content.ReadAsStringAsync();
-
-                //Console.WriteLine(xmlString);
-
-                using (StringReader reader = new StringReader(xmlString))
+            if (!hasDuplicates)
+            {
+                foreach (string word in list)
                 {
-                    XmlSerializer serializer = new XmlSerializer(typeof(feed));
-                    feed feed = (feed)serializer.Deserialize(reader);
+                    string requestUri = "http://export.arxiv.org/api/query?search_query=all:" + word;
 
-                    feedTitle feed_title = feed.title;
+                    HttpResponseMessage response = await client.GetAsync(requestUri);
 
-                    feedEntry[] feed_entry = feed.entry;
+                    response.EnsureSuccessStatusCode();
 
-                    string value = feed_title.Value;
-                    Console.WriteLine("title value = " + value);
+                    string xmlString = await response.Content.ReadAsStringAsync();
 
-                    int length = feed_entry.Length;
-                    Console.WriteLine("length = " + length + " (number of publications)");
+                    //Console.WriteLine(xmlString);
 
-                    for (int i = 0; i < length; i++)
+                    using (StringReader reader = new StringReader(xmlString))
                     {
-                        var entry = feed_entry[i];
-                        object[] items = entry.Items;
+                        XmlSerializer serializer = new XmlSerializer(typeof(feed));
+                        feed feed = (feed)serializer.Deserialize(reader);
 
-                        Console.WriteLine("length = " + items.Length + " (number of items)");
+                        feedTitle feed_title = feed.title;
 
-                        bool alreadyExists = false;
-                        Article article = new Article();
+                        feedEntry[] feed_entry = feed.entry;
 
-                        for (int j = 0; j < items.Length; j++)
+                        string value = feed_title.Value;
+                        Console.WriteLine("title value = " + value);
+
+                        int length = feed_entry.Length;
+                        Console.WriteLine("length = " + length + " (number of publications)");
+
+                        for (int i = 0; i < length; i++)
                         {
-                            object item = items[j];
+                            var entry = feed_entry[i];
+                            object[] items = entry.Items;
 
-                            if (item is feedEntryAuthor)
-                            {
-                                string name = ((feedEntryAuthor)item).name;
-                                Console.WriteLine("Author name = " + name);
-                                Contribution contribution = new Contribution();
-                                contribution.Author = name;
-                                article.Contributions.Add(contribution);
-                            }
-                            else if (item is feedEntryLink)
-                            {
-                                string href = ((feedEntryLink)item).href;
-                                Console.WriteLine("Link href = " + href);
-                                Link link = new Link();
-                                link.Hyperlink = href;
-                                article.Links.Add(link);
-                            }
-                            else if (item is feedEntryCategory)
-                            {
-                                string term = ((feedEntryCategory)item).term;
-                                Console.WriteLine("term = " + term);
-                            }
-                            else if (item is primary_category)
-                            {
-                                string term = ((primary_category)item).term;
-                                Console.WriteLine("primary category term = " + term);
-                            }
-                            else
-                            {
-                                Console.WriteLine("index = " + j + "     item = " + item.ToString());
+                            Console.WriteLine("length = " + items.Length + " (number of items)");
 
-                                if (j == 1)
+                            bool alreadyExists = false;
+                            Article article = new Article();
+
+                            for (int j = 0; j < items.Length; j++)
+                            {
+                                object item = items[j];
+
+                                if (item is feedEntryAuthor)
                                 {
-                                    if (item is DateTime)
-                                    {
-                                        DateTime dateTime = (DateTime)item;
-                                        article.DateTime1 = dateTime;
-                                    }
+                                    string name = ((feedEntryAuthor)item).name;
+                                    Console.WriteLine("Author name = " + name);
+                                    Contribution contribution = new Contribution();
+                                    contribution.Author = name;
+                                    article.Contributions.Add(contribution);
                                 }
-
-                                if (j == 2)
+                                else if (item is feedEntryLink)
                                 {
-                                    if (item is DateTime)
-                                    {
-                                        DateTime dateTime = (DateTime)item;
-                                        article.DateTime2 = dateTime;
-                                    }
+                                    string href = ((feedEntryLink)item).href;
+                                    Console.WriteLine("Link href = " + href);
+                                    Link link = new Link();
+                                    link.Hyperlink = href;
+                                    article.Links.Add(link);
                                 }
-
-                                if (j == 3)
+                                else if (item is feedEntryCategory)
                                 {
-                                    article.Title = item.ToString();
+                                    string term = ((feedEntryCategory)item).term;
+                                    Console.WriteLine("term = " + term);
+                                }
+                                else if (item is primary_category)
+                                {
+                                    string term = ((primary_category)item).term;
+                                    Console.WriteLine("primary category term = " + term);
+                                }
+                                else
+                                {
+                                    Console.WriteLine("index = " + j + "     item = " + item.ToString());
 
-                                    foreach (Article existingArticle in dbContext.Articles.ToList())
+                                    if (j == 1)
                                     {
-                                        if (existingArticle.Title == item.ToString())
+                                        if (item is DateTime)
                                         {
-                                            alreadyExists = true;
-                                            Console.WriteLine("The article with title '" + item.ToString() + "' already exists in the database!");
+                                            DateTime dateTime = (DateTime)item;
+                                            article.DateTime1 = dateTime;
                                         }
                                     }
-                                }
 
-                                if (j == 4)
-                                {
-                                    article.Abstract = item.ToString();
+                                    if (j == 2)
+                                    {
+                                        if (item is DateTime)
+                                        {
+                                            DateTime dateTime = (DateTime)item;
+                                            article.DateTime2 = dateTime;
+                                        }
+                                    }
+
+                                    if (j == 3)
+                                    {
+                                        article.Title = item.ToString();
+
+                                        foreach (Article existingArticle in dbContext.Articles.ToList())
+                                        {
+                                            if (existingArticle.Title == item.ToString())
+                                            {
+                                                alreadyExists = true;
+                                                Console.WriteLine("The article with title '" + item.ToString() + "' already exists in the database!");
+                                            }
+                                        }
+                                    }
+
+                                    if (j == 4)
+                                    {
+                                        article.Abstract = item.ToString();
+                                    }
                                 }
                             }
-                        }
 
-                        if (!alreadyExists)
-                        {
-                            dbContext.Articles.Add(article);
-                            dbContext.SaveChanges();
-                        }
+                            if (!alreadyExists)
+                            {
+                                dbContext.Articles.Add(article);
+                                dbContext.SaveChanges();
+                            }
 
-                        Console.WriteLine("\n-----------------------------------------------------------------------\n");
+                            Console.WriteLine("\n-----------------------------------------------------------------------\n");
+                        }
                     }
                 }
             }
