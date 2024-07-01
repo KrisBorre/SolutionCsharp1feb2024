@@ -99,6 +99,9 @@ namespace ConsoleArxiv24may2024
             C++
             */
 
+            Console.WriteLine();
+            Console.WriteLine();
+
             Console.WriteLine("\n\nLet's check if the abstract and the title use the same words.");
             int number_of_articles = 0;
             foreach (Article article in allArticles)
@@ -195,6 +198,22 @@ namespace ConsoleArxiv24may2024
 
             Console.WriteLine("\nOnly 1 percent of abstracts use references.");
             Console.WriteLine("99 percent of abstracts use no references.");
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            List<Article> agriculture = allArticles
+                .Where(a => a.Title.Contains("agricultur", StringComparison.OrdinalIgnoreCase) ||
+                            a.Title.Contains(" crop ", StringComparison.OrdinalIgnoreCase))
+                .ToList();
+
+            foreach (Article article in agriculture) // 41 articles
+            {
+                string title = article.Title.ReplaceLineEndings(" ");
+                Console.WriteLine(title);
+                Link? link = article.Links.Where(l => l.Hyperlink.Contains("pdf", StringComparison.OrdinalIgnoreCase)).FirstOrDefault();
+                Console.WriteLine(link?.Hyperlink);
+            }
 
             Console.Read();
         }
