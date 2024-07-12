@@ -111,7 +111,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleDictionary31may2024"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleHttpClientDictionary31may2024", "ConsoleHttpClientDictionary31may2024\ConsoleHttpClientDictionary31may2024.csproj", "{D2491E37-93FB-4B40-8C2E-659CB89F01EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHttpClientArxiv29may2024", "ConsoleHttpClientArxiv29may2024\ConsoleHttpClientArxiv29may2024.csproj", "{444B0BA8-0BD6-4E62-8939-413EF8767361}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleHttpClientArxiv29may2024", "ConsoleHttpClientArxiv29may2024\ConsoleHttpClientArxiv29may2024.csproj", "{444B0BA8-0BD6-4E62-8939-413EF8767361}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleDictionary1jun2024", "ConsoleDictionary1jun2024\ConsoleDictionary1jun2024.csproj", "{5E6EA28E-EE51-43AB-BD24-D60B675CABAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHttpClientDictionary1jun2024", "ConsoleHttpClientDictionary1jun2024\ConsoleHttpClientDictionary1jun2024.csproj", "{B7E1D3BF-1B25-4512-BA41-463E3C386C56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -339,6 +343,14 @@ Global
 		{444B0BA8-0BD6-4E62-8939-413EF8767361}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{444B0BA8-0BD6-4E62-8939-413EF8767361}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{444B0BA8-0BD6-4E62-8939-413EF8767361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E6EA28E-EE51-43AB-BD24-D60B675CABAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E6EA28E-EE51-43AB-BD24-D60B675CABAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E6EA28E-EE51-43AB-BD24-D60B675CABAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E6EA28E-EE51-43AB-BD24-D60B675CABAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E1D3BF-1B25-4512-BA41-463E3C386C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E1D3BF-1B25-4512-BA41-463E3C386C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E1D3BF-1B25-4512-BA41-463E3C386C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E1D3BF-1B25-4512-BA41-463E3C386C56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
