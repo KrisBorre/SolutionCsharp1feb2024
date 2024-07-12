@@ -26,34 +26,34 @@ namespace ConsoleDictionary31may2024
             //list.Add("impervious");
             //// page 65
             //list.Add("enviable");
-            // page 67
-            list.Add("dispelling");
-            list.Add("rumination");
-            list.Add("ruminative");
-            // page 68
-            list.Add("scrawl");
-            // page 69
-            list.Add("corral");
-            list.Add("slop");
-            // page 71
-            list.Add("preparatory");
-            // page 73
-            list.Add("impervious");
-            // page 78
-            list.Add("contemptuous");
-            // page 86
-            list.Add("circumscribe");
-            // page 91
-            list.Add("quandary");
-            // page 92
-            list.Add("elisions");
-            list.Add("elide");
-            // page 94
-            list.Add("perfunctory");
-            
+            //// page 67
+            //list.Add("dispelling");
+            //list.Add("rumination");
+            //list.Add("ruminative");
+            ////// page 68
+            //list.Add("scrawl");
+            //// page 69
+            //list.Add("corral");
+            //list.Add("slop");
+            //// page 71
+            //list.Add("preparatory");
+            //// page 73
+            //list.Add("impervious");
+            //// page 78
+            //list.Add("contemptuous");
+            //// page 86
+            //list.Add("circumscribe");
+            //// page 91
+            //list.Add("quandary");
+            //// page 92
+            //list.Add("elisions");
+            //list.Add("elide");
+            //// page 94
+            //list.Add("perfunctory");
             //// page 97
-            //list.Add("...");
-
+            //list.Add("debilitating");
+            //// page 100
+            //list.Add("egregious");
 
             foreach (string word in list)
             {

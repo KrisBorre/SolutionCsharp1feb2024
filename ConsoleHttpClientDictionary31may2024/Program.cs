@@ -48,9 +48,10 @@ namespace ConsoleHttpClientDictionary31may2024
             //list.Add("elide");
             //// page 94
             //list.Add("perfunctory");
-
             //// page 97
-            //list.Add("...");
+            //list.Add("debilitating");
+            //// page 100
+            //list.Add("egregious");
 
             DictionaryDbContext24may2024 dbContext = new DictionaryDbContext24may2024();
             dbContext.Database.EnsureCreated();
