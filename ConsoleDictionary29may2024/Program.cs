@@ -49,9 +49,17 @@ namespace ConsoleDictionary29may2024
             //list.Add("malignant");
             //// page 103
             //list.Add("squirrelly");
-
             // page 111
-
+            list.Add("carcinogen");
+            // page 112
+            list.Add("serendipity");
+            // page 129
+            list.Add("serendipity");
+            // page 172
+            list.Add("coincidence");
+            // page 179
+            list.Add("cervix");
+            // page 206
 
 
             foreach (string word in list)

@@ -27,29 +27,39 @@ namespace ConsoleHttpClientDictionary29may2024
             //list.Add("perch");
             //// page 17
             //list.Add("proliferative"); // Not found
-            list.Add("proliferate");
-            // page 19
-            list.Add("proliferation");
-            // page 22
-            list.Add("metastases");
-            // page 29
-            list.Add("dispute");
-            list.Add("disputation");
-            // page 31
-            list.Add("dilatory");
-            // page 34
-            list.Add("fretted");
-            list.Add("fret");
-            // page 42
-            list.Add("gunge");
-            // page 70
-            list.Add("colon");
-            // page 101
-            list.Add("benign");
-            list.Add("malignant");
-            // page 103
-            list.Add("squirrelly");
+            //list.Add("proliferate");
+            //// page 19
+            //list.Add("proliferation");
+            //// page 22
+            //list.Add("metastases");
+            //// page 29
+            //list.Add("dispute");
+            //list.Add("disputation");
+            //// page 31
+            //list.Add("dilatory");
+            //// page 34
+            //list.Add("fretted");
+            //list.Add("fret");
+            //// page 42
+            //list.Add("gunge");
+            //// page 70
+            //list.Add("colon");
+            //// page 101
+            //list.Add("benign");
+            //list.Add("malignant");
+            //// page 103
+            //list.Add("squirrelly");      
             // page 111
+            list.Add("carcinogen");
+            // page 112
+            list.Add("serendipity");
+            // page 129
+            list.Add("serendipity");
+            // page 172
+            list.Add("coincidence");
+            // page 179
+            list.Add("cervix");
+            // page 206
 
 
             DictionaryDbContext24may2024 dbContext = new DictionaryDbContext24may2024();
