@@ -2,65 +2,21 @@
 using LibraryHttpClientDictionary26may2024;
 using Newtonsoft.Json;
 
-namespace ConsoleHttpClientDictionary29may2024
+namespace ConsoleHttpClientDictionary3jun2024
 {
     internal class Program
     {
         static async Task Main(string[] args)
         {
-            Console.WriteLine("");
-
             List<string> list = new List<string>();
 
-            Console.WriteLine("p53: The gene that cracked the cancer code by Sue Armstrong");
-            //// page 9
-            //list.Add("vivacious");
-            //// page 10
-            //list.Add("scuppered");
-            //list.Add("scupper");
-            //list.Add("poignantly");
-            //list.Add("poignant");
-            //// page 11
-            //list.Add("froth");
-            //// page 14
-            //list.Add("perched");
-            //list.Add("perch");
-            //// page 17
-            //list.Add("proliferative"); // Not found
-            //list.Add("proliferate");
-            //// page 19
-            //list.Add("proliferation");
-            //// page 22
-            //list.Add("metastases");
-            //// page 29
-            //list.Add("dispute");
-            //list.Add("disputation");
-            //// page 31
-            //list.Add("dilatory");
-            //// page 34
-            //list.Add("fretted");
-            //list.Add("fret");
-            //// page 42
-            //list.Add("gunge");
-            //// page 70
-            //list.Add("colon");
-            //// page 101
-            //list.Add("benign");
-            //list.Add("malignant");
-            //// page 103
-            //list.Add("squirrelly");      
-            //// page 111
-            //list.Add("carcinogen");
-            //// page 112
-            //list.Add("serendipity");
-            //// page 129
-            //list.Add("serendipity");
-            //// page 172
-            //list.Add("coincidence");
-            //// page 179
-            //list.Add("cervix");
-            // page 206
-
+            Console.WriteLine("Becoming an Academic Writer by Patricia Goodson");
+            //// page 47
+            //list.Add("edifice");
+            //// page 55
+            //list.Add("subsisting");
+            //// page 222
+            //list.Add("salient");
 
             DictionaryDbContext24may2024 dbContext = new DictionaryDbContext24may2024();
             dbContext.Database.EnsureCreated();
