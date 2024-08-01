@@ -21,19 +21,28 @@ namespace ConsoleArxiv24may2024
                 .Include(a => a.Links)
                 .ToList();
 
+            Console.WriteLine("Number of Articles: " + allArticles.Count); // 1531
+
             List<Contribution> allContributions = dbContext.Contributions.ToList();
             List<Link> allLinks = dbContext.Links.ToList();
 
-            var selectedArticles1 = allArticles.FindAll(x => x.Title.Contains(word1));
+            //var selectedArticles1 = allArticles.FindAll(x => x.Title.Contains(word1)); // 32
 
-            var selectedArticles2 = allArticles.FindAll(x => x.Title.Contains(word2));
+            //var selectedArticles2 = allArticles.FindAll(x => x.Title.Contains(word2)); // 23
 
             var grouped = allContributions.GroupBy(c => c.Author);
 
             foreach (var group in grouped)
             {
-                if (group.Count() > 3) Console.WriteLine($"{group.Key} ({group.Count()})");
+                if (group.Count() > 6) Console.WriteLine($"{group.Key} ({group.Count()})");
             }
+            /*
+A. I. Neishtadt (8)
+Jérôme Darmont (16)
+Fadila Bentayeb (7)
+T. Mart (10)
+James Atwood (7)
+            */
 
             /*
             J. W. Burby (4)
@@ -100,55 +109,58 @@ namespace ConsoleArxiv24may2024
             */
 
             Console.WriteLine();
-            Console.WriteLine();
 
-            Console.WriteLine("\n\nLet's check if the abstract and the title use the same words.");
-            int number_of_articles = 0;
-            foreach (Article article in allArticles)
-            {
-                string[] array = article.Title.Split(' ');
-                int used = 0;
+            #region abstract uses the words from the title
+            //Console.WriteLine("\n\nLet's check if the abstract and the title use the same words.");
+            //int number_of_articles = 0;
+            //foreach (Article article in allArticles)
+            //{
+            //    string[] array = article.Title.Split(' ');
+            //    int used = 0;
 
-                foreach (var titleWord in array)
-                {
-                    if (article.Abstract.Contains(titleWord, StringComparison.InvariantCultureIgnoreCase))
-                    {
-                        used++;
-                    }
-                }
+            //    foreach (var titleWord in array)
+            //    {
+            //        if (article.Abstract.Contains(titleWord, StringComparison.InvariantCultureIgnoreCase))
+            //        {
+            //            used++;
+            //        }
+            //    }
 
-                double ratio = used / ((double)array.Length);
+            //    double ratio = used / ((double)array.Length);
 
-                if (ratio == 1.0)
-                {
-                    Console.WriteLine(article.Title);
-                    number_of_articles++;
-                }
-            }
+            //    if (ratio == 1.0)
+            //    {
+            //        Console.WriteLine(article.Title);
+            //        number_of_articles++;
+            //    }
+            //}
 
-            Console.WriteLine(number_of_articles / ((double)allArticles.Count));
-            // 1.0 -> 0,199 // 0.95 -> 0,201 // 0.90 -> 0,271 // 0.85 -> 0,415 // 0.80 -> 0,511        
+            //Console.WriteLine(number_of_articles / ((double)allArticles.Count));
+            //// 1.0 -> 0,199 // 0.95 -> 0,201 // 0.90 -> 0,271 // 0.85 -> 0,415 // 0.80 -> 0,511        
 
-            Console.WriteLine("\n20 percent of abstracts contain all the title words.");
+            //Console.WriteLine("\n20 percent of abstracts contain all the title words.");
 
-            Console.WriteLine("27 percent of abstracts contain 90 percent of the title words.");
+            //Console.WriteLine("27 percent of abstracts contain 90 percent of the title words.");
 
-            Console.WriteLine("41 percent of abstracts contain 85 percent of the title words.");
+            //Console.WriteLine("41 percent of abstracts contain 85 percent of the title words.");
 
-            Console.WriteLine("51 percent of abstracts contain 80 percent of the title words.\n");
+            //Console.WriteLine("51 percent of abstracts contain 80 percent of the title words.\n");
+            #endregion
 
-            int brackets = 0;
+            #region abstracts usually don't use references
 
-            foreach (Article article in allArticles)
-            {
-                if ((article.Abstract.Contains("(1998") || article.Abstract.Contains("(201")) && article.Abstract.Contains(')'))
-                {
-                    brackets++;
-                    Console.WriteLine(article.Abstract);
-                }
-            }
+            //int brackets = 0;
 
-            Console.WriteLine(brackets / ((double)allArticles.Count));
+            //foreach (Article article in allArticles)
+            //{
+            //    if ((article.Abstract.Contains("(1998") || article.Abstract.Contains("(201")) && article.Abstract.Contains(')'))
+            //    {
+            //        brackets++;
+            //        Console.WriteLine(article.Abstract);
+            //    }
+            //}
+
+            //Console.WriteLine(brackets / ((double)allArticles.Count));
 
             /*
             We present the second-order phase transition from a band insulator to metal
@@ -196,26 +208,68 @@ namespace ConsoleArxiv24may2024
             adiabatic quantum computation [H. Goto, Sci. Rep. \textbf{6}, 21686 (2016)].
             */
 
-            Console.WriteLine("\nOnly 1 percent of abstracts use references.");
-            Console.WriteLine("99 percent of abstracts use no references.");
+            //Console.WriteLine("\nOnly 1 percent of abstracts use references.");
+            //Console.WriteLine("99 percent of abstracts use no references.");
+            #endregion
 
-            Console.WriteLine();
-            Console.WriteLine();
+            #region agricultur and crop
+            //List<Article> agriculture = allArticles
+            //    .Where(a => a.Title.Contains("agricultur", StringComparison.OrdinalIgnoreCase) ||
+            //                a.Title.Contains(" crop ", StringComparison.OrdinalIgnoreCase))
+            //    .ToList();
 
-            List<Article> agriculture = allArticles
-                .Where(a => a.Title.Contains("agricultur", StringComparison.OrdinalIgnoreCase) ||
-                            a.Title.Contains(" crop ", StringComparison.OrdinalIgnoreCase))
-                .ToList();
+            //foreach (Article article in agriculture) // 41 articles
+            //{
+            //    string title = article.Title.ReplaceLineEndings(" ");
+            //    Console.WriteLine(title);
+            //    Link? link = article.Links.Where(l => l.Hyperlink.Contains("pdf", StringComparison.OrdinalIgnoreCase)).FirstOrDefault();
+            //    Console.WriteLine(link?.Hyperlink);
+            //}
+            #endregion
 
-            foreach (Article article in agriculture) // 41 articles
+            List<Article> questionsInAbstractAndTitle = new List<Article>();
+            List<Article> questionsInAbstract = new List<Article>();
+            List<Article> questionsInTitle = new List<Article>();
+
+            foreach (Article article in allArticles)
             {
-                string title = article.Title.ReplaceLineEndings(" ");
-                Console.WriteLine(title);
-                Link? link = article.Links.Where(l => l.Hyperlink.Contains("pdf", StringComparison.OrdinalIgnoreCase)).FirstOrDefault();
-                Console.WriteLine(link?.Hyperlink);
+                if (article.Title.Contains('?'))
+                {
+                    questionsInTitle.Add(article);
+                }
+
+                if (article.Abstract.Contains('?'))
+                {
+                    questionsInAbstract.Add(article);
+                }
+
+                if (article.Title.Contains('?') && article.Abstract.Contains('?'))
+                {
+                    questionsInAbstractAndTitle.Add(article);
+                }
+            }
+
+            Console.WriteLine("Number of articles with questions in the Title: " + questionsInTitle.Count); // 28
+            Console.WriteLine("Number of articles with questions in the Abstract: " + questionsInAbstract.Count); // 31
+            Console.WriteLine("Number of articles with questions in the Abstract and the Title: " + questionsInAbstractAndTitle.Count); // 2
+            Console.WriteLine();
+
+            foreach (Article article in questionsInTitle)
+            {
+                Console.WriteLine(article.Title);
+                Console.WriteLine();
+            }
+
+            Console.WriteLine();
+
+            foreach (Article article in questionsInAbstract)
+            {
+                Console.WriteLine(article.Abstract);
+                Console.WriteLine();
             }
 
             Console.Read();
         }
+
     }
 }

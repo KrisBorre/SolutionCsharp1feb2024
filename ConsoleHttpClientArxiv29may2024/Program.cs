@@ -18,28 +18,28 @@ namespace ConsoleHttpClientArxiv29may2024
 
             // Designing and Implementing Data Warehouse for Agricultural Big Data (2019)           
             List<string> list = new List<string>();
-            // Reference [31]
-            list.Add("UN+team+World+population+projected+2050");
-            // Reference [28]
-            list.Add("Precision+agriculture+farming+Europe");
-            // Reference [22]
-            list.Add("Database+data+warehousing+guide");
+            //// Reference [31]
+            //list.Add("UN+team+World+population+projected+2050");
+            //// Reference [28]
+            //list.Add("Precision+agriculture+farming+Europe");
+            //// Reference [22]
+            //list.Add("Database+data+warehousing+guide");
 
-            list.Add("sensor+data+agriculture+fields+livestock+data");
-            list.Add("drone+software+agriculture+mapping");
-            list.Add("remote+sensing+satellite+imagery+Data+Warehouse");
-            list.Add("IoT+InternetOfThings+Big+Data+farm+equipment");
-            list.Add("weather+stations+farmers+agribusinesses");
-            list.Add("crop+intelligence+platform+Big+Data");
-            list.Add("agronomy+decision+making+recommendations");
-            list.Add("constellation+schema+precision+agriculture+seed+companies");
-            list.Add("water+energy+fertilisers+pesticides+crop+monitoring");
-            list.Add("local+pest+disease+outbreak+tracking");
-            list.Add("crop+monitoring+market+accessing+food+security");
-            list.Add("Data+warehouse+livestock+farming");
-            list.Add("agricultural+DW+Data+Warehouse");
-            list.Add("galaxy+schema+constellation+schema+iFarms");
-            list.Add("crops+fertilisers+field+farmers+crop+companies+Europe");
+            //list.Add("sensor+data+agriculture+fields+livestock+data");
+            //list.Add("drone+software+agriculture+mapping");
+            //list.Add("remote+sensing+satellite+imagery+Data+Warehouse");
+            //list.Add("IoT+InternetOfThings+Big+Data+farm+equipment");
+            //list.Add("weather+stations+farmers+agribusinesses");
+            //list.Add("crop+intelligence+platform+Big+Data");
+            //list.Add("agronomy+decision+making+recommendations");
+            //list.Add("constellation+schema+precision+agriculture+seed+companies");
+            //list.Add("water+energy+fertilisers+pesticides+crop+monitoring");
+            //list.Add("local+pest+disease+outbreak+tracking");
+            //list.Add("crop+monitoring+market+accessing+food+security");
+            //list.Add("Data+warehouse+livestock+farming");
+            //list.Add("agricultural+DW+Data+Warehouse");
+            //list.Add("galaxy+schema+constellation+schema+iFarms");
+            //list.Add("crops+fertilisers+field+farmers+crop+companies+Europe");
 
             bool hasDuplicates = false;
             var grouped = list.GroupBy(s => s);

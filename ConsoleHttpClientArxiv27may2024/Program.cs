@@ -18,18 +18,18 @@ namespace ConsoleHttpClientArxiv27may2024
 
             // De reis van de mensheid, Johannes Kraus en Thomas Trappe (2022)
             List<string> list = new List<string>();
-            list.Add("neandertal+genome");
-            list.Add("archaic+hominin+group");
-            list.Add("nuclear+dna+europe");
-            list.Add("mitochondrial+dna+genome+hominin");
-            list.Add("bonobo+genome+chimpanzee");
-            list.Add("reduced+purine+biosynthesis");
-            list.Add("human+brain+development");
-            list.Add("human+germline+genome+editing");
-            list.Add("evolution+modern+human+brain");
-            list.Add("species+evolve+subdivided+populations");
-            list.Add("human+effective+population+size+linkage+disequilibrium");
-            list.Add("human+body+evolution+health+disease"); // pagina 291
+            //list.Add("neandertal+genome");
+            //list.Add("archaic+hominin+group");
+            //list.Add("nuclear+dna+europe");
+            //list.Add("mitochondrial+dna+genome+hominin");
+            //list.Add("bonobo+genome+chimpanzee");
+            //list.Add("reduced+purine+biosynthesis");
+            //list.Add("human+brain+development");
+            //list.Add("human+germline+genome+editing");
+            //list.Add("evolution+modern+human+brain");
+            //list.Add("species+evolve+subdivided+populations");
+            //list.Add("human+effective+population+size+linkage+disequilibrium");
+            //list.Add("human+body+evolution+health+disease"); // pagina 291
 
             foreach (string word in list)
             {
