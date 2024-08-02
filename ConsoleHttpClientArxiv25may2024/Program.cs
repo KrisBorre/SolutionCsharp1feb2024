@@ -62,6 +62,12 @@ namespace ConsoleHttpClientArxiv25may2024
             //list.Add("rapidly+oscillating+solutions");
             //list.Add("Fermi+acceleration+time-dependent+billiards");
             //list.Add("Fermi-Ulam+model");
+            //list.Add("adiabatic+invariant+elliptic");
+            //list.Add("adiabatic+invariance+elliptic");
+            //list.Add("adiabatic+invariant+pendulum");
+            //list.Add("adiabatic+invariance+pendulum");
+            //list.Add("adiabatic+invariant+relativistic+oscillator");
+            //list.Add("adiabatic+invariance+relativistic+oscillator");
 
             bool hasDuplicates = false;
             var grouped = list.GroupBy(s => s);

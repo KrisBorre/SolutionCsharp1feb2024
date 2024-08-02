@@ -32,24 +32,24 @@ namespace ConsoleArxiv24may2024
 
             var bothArticles1 = allArticles.FindAll(x => (x.Title.Contains(word1, StringComparison.OrdinalIgnoreCase) && x.Title.Contains(word2, StringComparison.OrdinalIgnoreCase))); // 20
 
-            foreach (var article in bothArticles1)
-            {
-                string[] titles = article.Title.Split("\n");
-                foreach (var t in titles)
-                {
-                    Console.WriteLine(t);
-                }
-                Console.WriteLine();
-                //Console.WriteLine(article.Abstract + "\n");
-                foreach (var link in article.Links)
-                {
-                    if (link.Hyperlink.Contains("pdf"))
-                    {
-                        Console.WriteLine(link.Hyperlink);
-                    }
-                }
-                Console.WriteLine("\n");
-            }
+            //foreach (var article in bothArticles1)
+            //{
+            //    string[] titles = article.Title.Split("\n");
+            //    foreach (var t in titles)
+            //    {
+            //        Console.WriteLine(t);
+            //    }
+            //    Console.WriteLine();
+            //    //Console.WriteLine(article.Abstract + "\n");
+            //    foreach (var link in article.Links)
+            //    {
+            //        if (link.Hyperlink.Contains("pdf"))
+            //        {
+            //            Console.WriteLine(link.Hyperlink);
+            //        }
+            //    }
+            //    Console.WriteLine("\n");
+            //}
 
             /*
             Invariant Perturbation Theory of Adiabatic Process
@@ -164,7 +164,31 @@ namespace ConsoleArxiv24may2024
             var bothArticles2 = allArticles.FindAll(x => ((x.Title.Contains(word1, StringComparison.OrdinalIgnoreCase) || x.Abstract.Contains(word1, StringComparison.OrdinalIgnoreCase)) && (x.Title.Contains(word2, StringComparison.OrdinalIgnoreCase) || x.Abstract.Contains(word2, StringComparison.OrdinalIgnoreCase)))); // 97
 
             var threeArticles1 = bothArticles2.FindAll(x => x.Abstract.Contains(word3, StringComparison.OrdinalIgnoreCase));
-            Console.WriteLine("The number of articles about adiabatic invariants and elliptic ... : " + threeArticles1.Count); // 0
+            Console.WriteLine("The number of articles about adiabatic invariants and elliptic ... : " + threeArticles1.Count); // 8
+
+            foreach (var article in threeArticles1)
+            {
+                string[] titles = article.Title.Split("\n");
+                foreach (var t in titles)
+                {
+                    Console.WriteLine(t);
+                }
+                Console.WriteLine();
+                //Console.WriteLine(article.Abstract + "\n");
+                foreach (var link in article.Links)
+                {
+                    if (link.Hyperlink.Contains("pdf"))
+                    {
+                        Console.WriteLine(link.Hyperlink);
+                    }
+                }
+                Console.WriteLine("\n");
+            }
+
+            /*
+            Dicke model semiclassical dynamics in superradiant dipolar phase in the 'bound luminosity' state
+            http://arxiv.org/pdf/2309.12446v1
+            */
 
             var grouped = allContributions.GroupBy(c => c.Author);
 
