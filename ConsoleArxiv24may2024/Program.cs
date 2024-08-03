@@ -1,5 +1,6 @@
 ﻿using LibraryArxiv24may2024;
 using Microsoft.EntityFrameworkCore;
+using System.Text.RegularExpressions;
 
 namespace ConsoleArxiv24may2024
 {
@@ -228,14 +229,31 @@ namespace ConsoleArxiv24may2024
             foreach (var article in githubArticles)
             {
                 string[] titles = article.Title.Split("\n");
-                //Console.WriteLine(titles[0]);
+                foreach (var t in titles)
+                {
+                    Console.Write(t);
+                }
+                Console.WriteLine();
+
                 //Console.WriteLine(article.Abstract + "\n");
+
+                string pattern = @"https://github.com/.*";
+                Match match = Regex.Match(article.Abstract, pattern);
+
+                if (match.Success)
+                {
+                    string url = match.Groups[0].Value.TrimEnd('.', '}', ')', ',');
+                    Console.WriteLine(url);
+                }
+
+                Console.WriteLine();
             }
 
             /*         
             WW-Nets: Dual Neural Networks for Object Detection
             https://github.com/mkebrahimpour
-            
+            Python
+
             DGoT: Dynamic Graph of Thoughts for Scientific Abstract Generation
             https://github.com/JayceNing/DGoT
             Python
@@ -246,9 +264,11 @@ namespace ConsoleArxiv24may2024
             
             Joint Learning of Salient Object Detection, Depth Estimation and Contour
             https://github.com/Xiaoqi-Zhao-DLUT/MMFT
+            Python
 
             VISLA Benchmark: Evaluating Embedding Sensitivity to Semantic and
             https://github.com/Sri-Harsha/visla_benchmark
+            no code 
 
             MORE: Simultaneous Multi-View 3D Object Recognition and Pose Estimation
             https://github.com/SubhadityaMukherjee/more_mvcnn
@@ -272,98 +292,126 @@ namespace ConsoleArxiv24may2024
 
             MATES: Model-Aware Data Selection for Efficient Pretraining with Data
             https://github.com/cxcscmu/MATES
+            Python
 
             Fin-Fact: A Benchmark Dataset for Multimodal Financial Fact Checking and
             https://github.com/IIT-DM/Fin-Fact/
+            Python
 
             Label-Efficient Learning in Agriculture: A Comprehensive Review
             https://github.com/DongChen06/Label-efficient-in-Agriculture
+            Python
 
             TorchGeo: Deep Learning With Geospatial Data
             https://github.com/microsoft/torchgeo
+            Python
 
             FlightScope: A Deep Comprehensive Assessment of Aircraft Detection
             https://github.com/toelt-llc/FlightScope_Bench
+            Python Jupyter Notebook 
 
             Public Computer Vision Datasets for Precision Livestock Farming: A
             https://github.com/Anil-Bhujel/Public-Computer-Vision-Dataset-A-Systematic-Survey
+            no code
 
             Landmark Detection and 3D Face Reconstruction for Caricature using a
             https://github.com/Juyong/CaricatureFace
+            Python
 
             Weakly-supervised Caricature Face Parsing through Domain Adaptation
             https://github.com/ZJULearning/CariFaceParsing
+            Python
 
             Self-supervised transformer-based pre-training method with General Plant
             https://github.com/WASSER2545/GPID-22
+            not found
 
             Component-aware anomaly detection framework for adjustable and logical
             https://github.com/liutongkun/ComAD
+            Python
 
             Cross-Domain Graph Anomaly Detection via Anomaly-aware Contrastive
             https://github.com/QZ-WANG/ACT
+            Python
 
             RealNet: A Feature Selection Network with Realistic Synthetic Anomaly
             https://github.com/cnulab/RealNet
+            Python
 
             Towards Scalable 3D Anomaly Detection and Localization: A Benchmark via
             https://github.com/Chopper-233/Anomaly-ShapeNet
+            no code
 
             Exploiting Structural Consistency of Chest Anatomy for Unsupervised
             https://github.com/MrGiovanni/SimSID
+            Python
 
             Exploring CLIP for Assessing the Look and Feel of Images
             https://github.com/IceClear/CLIP-IQA
+            Python
 
             Universal Instance Perception as Object Discovery and Retrieval
             https://github.com/MasterBin-IIAU/UNINEXT
+            Python
 
             PreprintMatch: a tool for preprint publication detection applied to
             https://github.com/PeterEckmann1/preprint-match
+            Python
 
             Image-to-Image Translation via Group-wise Deep Whitening-and-Coloring
             https://github.com/WonwoongCho/GDWCT
+            Python
+            indrukwekkend
 
             Online Analytic Exemplar-Free Continual Learning with Large Models for
             https://github.com/ZHUANGHP/Analytic-continual-learning
+            Python
 
             ScrewNet: Category-Independent Articulation Model Estimation From Depth
             https://pearl-utexas.github.io/ScrewNet/
+            Python
 
             Distributional Depth-Based Estimation of Object Articulation Models
             https://pearl-utexas.github.io/DUST-net/
+            Python
 
             WordStylist: Styled Verbatim Handwritten Text Generation with Latent
             https://github.com/koninik/WordStylist
+            Python
 
             GR-RNN: Global-Context Residual Recurrent Neural Networks for Writer
             https://github.com/shengfly/writer-identification
+            Python
 
             EmoGen: Eliminating Subjective Bias in Emotional Music Generation
             https://ai-muzic.github.io/emogen/
             https://github.com/microsoft/muzic/
+            Python
+            heel indrukwekkend
 
             Using Emotion Embeddings to Transfer Knowledge Between Emotions
             https://github.com/gchochla/Demux-MEmo
+            Python
 
             EmoVIT: Revolutionizing Emotion Insights with Visual Instruction Tuning
-            https://github.com/aimmemotion/EmoVIT}
+            https://github.com/aimmemotion/EmoVIT
+            Python
 
             DRT: A Lightweight Single Image Deraining Recursive Transformer
             https://github.com/YC-Liang/DRT
+            Python
 
             Real-time Transformer-based Open-Vocabulary Detection with Efficient
             https://github.com/om-ai-lab/OmDet
+            Python
 
             Data-Efficient Unsupervised Interpolation Without Any Intermediate Frame
             https://github.com/jungeun122333/UVI-Net
-
-            Decoding the End-to-end Writing Trajectory in Scholarly Manuscripts
-            https://minnesotanlp.github.io/REWARD_demo/
+            Python
 
             Learning to Localize Actions from Moments
             https://github.com/FuchenUSTC/AherNet
-
+            Python
             */
             #endregion
 
