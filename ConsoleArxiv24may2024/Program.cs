@@ -567,6 +567,82 @@ namespace ConsoleArxiv24may2024
                 Console.WriteLine();
             }
 
+            /*
+            Does your gene need a background check? How genetic background impacts the analysis of mutations, genes, and evolution
+
+            Does Non-Genetic Heterogeneity Facilitate the Development of Genetic Drug Resistance?
+
+            What can topology tell us about the neural code?
+
+            Is neuroscience facing up to statistical power?
+
+            Is Arnold diffusion relevant to global diffusion?
+
+            Can Humans Really Discriminate 1 Trillion Odors?
+
+            Could humans recognize odor by phonon assisted tunneling?
+
+            Where are We in Event-centric Emotion Analysis? Bridging Emotion Role Labeling and Appraisal-based Approaches
+
+            Are task representations gated in macaque prefrontal cortex?
+
+            What Happens to Intentional Concepts in Requirements Engineering If Intentional States Cannot Be Known?
+
+            In whose mind is Mathematics an "a priori cognition"?
+
+            Does Using ChatGPT Result in Human Cognitive Augmentation?
+
+            Can Social Robots Effectively Elicit Curiosity in STEM Topics from K-1 Students During Oral Assessments?
+
+            How do media talk about the Covid-19 pandemic? Metaphorical thematic clustering in Italian online newspapers
+
+            Happy New Year Homo erectus? More evidence for interbreeding with archaics predating the modern human/Neanderthal split
+
+            Is abundant A-to-I RNA editing primate-specific?
+
+            How will the Internet of Things enable Augmented Personalized Health?
+
+            What happens when the geomagnetic field reverses?
+
+            Walking through a library remotely - Why we need maps for collections and how KnoweScape can help us to make them?
+
+            Decision-aid or Controller? Steering Human Decision Makers with Algorithms
+
+            Can SAM recognize crops? Quantifying the zero-shot performance of a semantic segmentation foundation model on generating crop-type maps using satellite imagery for precision agriculture
+
+            Does economics need a scientific revolution?
+
+            Is there currently a scientific revolution in scientometrics?
+
+            A New Scientific Revolution at the Horizon?
+
+            What shapes climate change perceptions in Africa? A random forest approach
+
+            A paradigm shift, or a paradigm adjustment? The evolution of the Oleaceae mating system as a small-scale Kuhnian case-study
+
+            The Nightmare Scenario and the Origin of the Standard Model. "We Got it Wrong ...How did we misread the signals? ... What to Do?"
+
+            Which are the True Defeasible Logics?
+
+            Art or Artifice? Large Language Models and the False Promise of Creativity
+
+            A Robot Walks into a Bar: Can Language Models Serve as Creativity Support Tools for Comedy? An Evaluation of LLMs' Humour Alignment with Comedians
+
+            How do public research labs use funding for research? A case study
+
+            Where is the mind within the brain? Transient selection of subnetworks by metabotropic receptors and G protein-gated ion channels
+
+            How to use magnetic field information for coronal loop identification?
+
+            Bloch Electrons in a Magnetic Field - Why Does Chaos Send Electrons the Hard Way?
+
+            Can Bohmian trajectories account for quantum recurrences having classical periodicities?
+
+            Why does group theory fail to describe charge structure of particles ?
+
+            Magnetic winding: what is it and what is it good for?
+            */
+
             Console.WriteLine();
 
             //foreach (Article article in questionsInAbstract)
