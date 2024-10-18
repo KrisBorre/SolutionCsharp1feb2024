@@ -127,7 +127,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleHttpClientDictionary
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleHttpClientArxiv10jun2024", "ConsoleHttpClientArxiv10jun2024\ConsoleHttpClientArxiv10jun2024.csproj", "{E35336CB-BA06-4EF0-B423-4D4C3C6846CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHttpClientArxiv11jun2024", "ConsoleHttpClientArxiv11jun2024\ConsoleHttpClientArxiv11jun2024.csproj", "{B1FEBE3C-9A1F-48BE-9D55-B81EA3E34994}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleHttpClientArxiv11jun2024", "ConsoleHttpClientArxiv11jun2024\ConsoleHttpClientArxiv11jun2024.csproj", "{B1FEBE3C-9A1F-48BE-9D55-B81EA3E34994}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleWrite4aug2024", "ConsoleWrite4aug2024\ConsoleWrite4aug2024.csproj", "{2007008F-E2F6-4B7A-94E3-4D0BEB7A55DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -387,6 +389,10 @@ Global
 		{B1FEBE3C-9A1F-48BE-9D55-B81EA3E34994}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1FEBE3C-9A1F-48BE-9D55-B81EA3E34994}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1FEBE3C-9A1F-48BE-9D55-B81EA3E34994}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2007008F-E2F6-4B7A-94E3-4D0BEB7A55DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2007008F-E2F6-4B7A-94E3-4D0BEB7A55DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2007008F-E2F6-4B7A-94E3-4D0BEB7A55DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2007008F-E2F6-4B7A-94E3-4D0BEB7A55DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

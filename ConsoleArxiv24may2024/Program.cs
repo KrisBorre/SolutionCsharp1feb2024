@@ -534,6 +534,7 @@ namespace ConsoleArxiv24may2024
             //}
             #endregion
 
+            #region questions
             List<Article> questionsInAbstractAndTitle = new List<Article>();
             List<Article> questionsInAbstract = new List<Article>();
             List<Article> questionsInTitle = new List<Article>();
@@ -650,6 +651,120 @@ namespace ConsoleArxiv24may2024
             //    Console.WriteLine(article.Abstract);
             //    Console.WriteLine();
             //}
+
+            #endregion
+
+            #region paper
+
+            //// In this paper
+            //List<Article> inThisPaperInAbstract = new List<Article>(); // 323
+            //List<Article> inThisPaperInTitle = new List<Article>(); // 0
+            //List<Article> inThisPaperInAbstractAndTitle = new List<Article>();
+
+            //foreach (Article article in allArticles)
+            //{
+            //    if (article.Abstract.Contains("n this paper"))
+            //    {
+            //        inThisPaperInAbstract.Add(article);
+            //    }
+            //    if (article.Title.Contains("n this paper"))
+            //    {
+            //        inThisPaperInTitle.Add(article);
+            //    }
+            //    if (article.Title.Contains("n this paper") || article.Abstract.Contains("n this paper"))
+            //    {
+            //        inThisPaperInAbstractAndTitle.Add(article);
+            //    }
+            //}
+
+
+            //// manuscript
+            //List<Article> manuscriptInAbstract = new List<Article>(); // 6
+            //List<Article> manuscriptInTitle = new List<Article>(); // 6
+            //List<Article> manuscriptInAbstractAndTitle = new List<Article>(); // 6
+
+            //foreach (Article article in allArticles)
+            //{
+            //    if (article.Abstract.Contains("manuscript"))
+            //    {
+            //        manuscriptInAbstract.Add(article);
+            //    }
+            //    if (article.Title.Contains("manuscript"))
+            //    {
+            //        manuscriptInTitle.Add(article);
+            //    }
+            //    if (article.Title.Contains("manuscript") || article.Abstract.Contains("manuscript"))
+            //    {
+            //        manuscriptInAbstractAndTitle.Add(article);
+            //    }
+            //}
+
+            //Console.WriteLine("manuscript !!!!!!!");
+
+            //foreach (Article article in manuscriptInTitle)
+            //{
+            //    Console.WriteLine(article.Title);
+            //    Console.WriteLine();
+            //}
+
+            //foreach (Article article in manuscriptInAbstract)
+            //{
+            //    Console.WriteLine(article.Abstract);
+            //    Console.WriteLine();
+            //}
+
+
+            //// answer
+            //List<Article> answerInAbstract = new List<Article>(); // 28
+            //List<Article> answerPaperInTitle = new List<Article>(); // 0
+            //List<Article> answerInAbstractAndTitle = new List<Article>();
+
+            //foreach (Article article in allArticles)
+            //{
+            //    if (article.Abstract.Contains("answer"))
+            //    {
+            //        answerInAbstract.Add(article);
+            //    }
+            //    if (article.Title.Contains("answer"))
+            //    {
+            //        answerPaperInTitle.Add(article);
+            //    }
+            //    if (article.Title.Contains("answer") || article.Abstract.Contains("answer"))
+            //    {
+            //        answerInAbstractAndTitle.Add(article);
+            //    }
+            //}
+
+            //Console.WriteLine("answer !!!!!!!");
+            //foreach (Article article in answerInAbstract)
+            //{
+            //    Console.WriteLine(article.Abstract);
+            //    Console.WriteLine();
+            //}
+
+
+            //// attention
+            //List<Article> attentionInAbstract = new List<Article>(); // 85
+            //List<Article> attentionInTitle = new List<Article>(); // 0
+            //List<Article> attentionInAbstractAndTitle = new List<Article>();
+
+            //foreach (Article article in allArticles)
+            //{
+            //    if (article.Abstract.Contains("attention"))
+            //    {
+            //        attentionInAbstract.Add(article);
+            //    }
+            //    if (article.Title.Contains("attention"))
+            //    {
+            //        attentionInTitle.Add(article);
+            //    }
+            //    if (article.Title.Contains("attention") || article.Abstract.Contains("attention"))
+            //    {
+            //        attentionInAbstractAndTitle.Add(article);
+            //    }
+            //}
+
+            #endregion
 
             Console.Read();
         }
