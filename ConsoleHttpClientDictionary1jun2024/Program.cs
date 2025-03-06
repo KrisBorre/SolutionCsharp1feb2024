@@ -36,7 +36,12 @@ namespace ConsoleHttpClientDictionary1jun2024
             //list.Add("percolate");
             //// page 94
             //list.Add("permeation"); // not found
-
+            //// page 100
+            //list.Add("electuaries");
+            //// page 101
+            //list.Add("explicable");
+            //// page 106
+            //list.Add("encomia");
 
             DictionaryDbContext24may2024 dbContext = new DictionaryDbContext24may2024();
             dbContext.Database.EnsureCreated();

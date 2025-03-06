@@ -38,6 +38,12 @@ namespace ConsoleDictionary1jun2024
             list.Add("percolate");
             // page 94
             list.Add("permeation");
+            // page 100
+            list.Add("electuaries");
+            // page 101
+            list.Add("explicable");
+            // page 106
+            list.Add("encomia");
 
             foreach (string word in list)
             {

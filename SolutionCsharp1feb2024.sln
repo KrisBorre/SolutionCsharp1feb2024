@@ -129,7 +129,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleHttpClientArxiv10jun
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleHttpClientArxiv11jun2024", "ConsoleHttpClientArxiv11jun2024\ConsoleHttpClientArxiv11jun2024.csproj", "{B1FEBE3C-9A1F-48BE-9D55-B81EA3E34994}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleWrite4aug2024", "ConsoleWrite4aug2024\ConsoleWrite4aug2024.csproj", "{2007008F-E2F6-4B7A-94E3-4D0BEB7A55DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleWrite4aug2024", "ConsoleWrite4aug2024\ConsoleWrite4aug2024.csproj", "{2007008F-E2F6-4B7A-94E3-4D0BEB7A55DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleWrite5aug2024", "ConsoleWrite5aug2024\ConsoleWrite5aug2024.csproj", "{A03DA7B6-52C2-4B71-97AA-1B70A942F6DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -393,6 +395,10 @@ Global
 		{2007008F-E2F6-4B7A-94E3-4D0BEB7A55DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2007008F-E2F6-4B7A-94E3-4D0BEB7A55DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2007008F-E2F6-4B7A-94E3-4D0BEB7A55DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A03DA7B6-52C2-4B71-97AA-1B70A942F6DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A03DA7B6-52C2-4B71-97AA-1B70A942F6DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A03DA7B6-52C2-4B71-97AA-1B70A942F6DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A03DA7B6-52C2-4B71-97AA-1B70A942F6DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

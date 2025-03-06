@@ -7,7 +7,7 @@ namespace ConsoleArxiv24may2024
     internal class Program
     {
         static void Main(string[] args)
-        {
+        {    
             Console.WriteLine("Hello, Arxiv database!");
 
             ArxivDbContext23may2024 dbContext = new ArxivDbContext23may2024();
@@ -63,8 +63,7 @@ namespace ConsoleArxiv24may2024
             http://arxiv.org/pdf/1206.1018v1
 
 
-            General formulas for adiabatic invariants in nearly-periodic Hamiltonian
-              systems
+            General formulas for adiabatic invariants in nearly-periodic Hamiltonian systems
 
             http://arxiv.org/pdf/2005.00634v1
 
@@ -74,8 +73,7 @@ namespace ConsoleArxiv24may2024
             http://arxiv.org/pdf/1505.04670v1
 
 
-            On the interplay between Noether's theorem and the theory of adiabatic
-              invariants
+            On the interplay between Noether's theorem and the theory of adiabatic invariants
 
             http://arxiv.org/pdf/2012.08853v1
 
@@ -85,20 +83,17 @@ namespace ConsoleArxiv24may2024
             http://arxiv.org/pdf/1906.08686v1
 
 
-            The Rayleigh-Lorentz Invariant and Optimal Adiabatic Qubit-Information
-              Detection for Superconducting Qubit Resonators
+            The Rayleigh-Lorentz Invariant and Optimal Adiabatic Qubit-Information Detection for Superconducting Qubit Resonators
 
             http://arxiv.org/pdf/2007.10671v1
 
 
-            Robust stimulated Raman shortcut-to-adiabatic passage by invariant-based
-              optimal control
+            Robust stimulated Raman shortcut-to-adiabatic passage by invariant-based optimal control
 
             http://arxiv.org/pdf/2103.01386v1
 
 
-            On the accuracy of conservation of adiabatic invariants in slow-fast
-              systems
+            On the accuracy of conservation of adiabatic invariants in slow-fast systems
 
             http://arxiv.org/pdf/1103.1595v1
 
@@ -123,20 +118,17 @@ namespace ConsoleArxiv24may2024
             http://arxiv.org/pdf/2209.04367v1
 
 
-            Exact Analysis of the Adiabatic Invariants in Time-Dependent Harmonic
-              Oscillator
+            Exact Analysis of the Adiabatic Invariants in Time-Dependent Harmonic Oscillator
 
             http://arxiv.org/pdf/nlin/0506033v1
 
 
-            The invariant based investigation of Shortcut to Adiabaticity for
-              Quantum Harmonic Oscillators under time varying frictional force
+            The invariant based investigation of Shortcut to Adiabaticity for Quantum Harmonic Oscillators under time varying frictional force
 
             http://arxiv.org/pdf/1910.04575v2
 
 
-            Higher-derivative harmonic oscillators: stability of classical dynamics
-              and adiabatic invariants
+            Higher-derivative harmonic oscillators: stability of classical dynamics and adiabatic invariants
 
             http://arxiv.org/pdf/1811.07733v2
 
@@ -156,8 +148,7 @@ namespace ConsoleArxiv24may2024
             http://arxiv.org/pdf/1611.07863v1
 
 
-            Change in the adiabatic invariant in a nonlinear two-mode model of
-              Feshbach resonance passage
+            Change in the adiabatic invariant in a nonlinear two-mode model of Feshbach resonance passage
 
             http://arxiv.org/pdf/nlin/0611007v2
             */
