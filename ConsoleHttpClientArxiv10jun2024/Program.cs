@@ -16,7 +16,7 @@ namespace ConsoleHttpClientArxiv10jun2024
 
             using var client = new HttpClient();
 
-            // The Structure of Scientific Revolutions by Thomas S. Kuhn.      
+            Console.WriteLine("The Structure of Scientific Revolutions by Thomas S. Kuhn.");
             List<string> list = new List<string>();
             //list.Add("structure+scientific+revolutions");
             //list.Add("anomaly+awareness");
@@ -143,7 +143,9 @@ namespace ConsoleHttpClientArxiv10jun2024
                                                 if (existingArticle.Title == item.ToString())
                                                 {
                                                     alreadyExists = true;
+                                                    Console.ForegroundColor = ConsoleColor.Red;
                                                     Console.WriteLine("The article with title '" + item.ToString() + "' already exists in the database!");
+                                                    Console.ResetColor();
                                                 }
                                             }
                                         }

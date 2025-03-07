@@ -7,7 +7,7 @@ namespace ConsoleArxiv24may2024
     internal class Program
     {
         static void Main(string[] args)
-        {    
+        {
             Console.WriteLine("Hello, Arxiv database!");
 
             ArxivDbContext23may2024 dbContext = new ArxivDbContext23may2024();

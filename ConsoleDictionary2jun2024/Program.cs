@@ -14,7 +14,7 @@ namespace ConsoleDictionary2jun2024
 
             Console.WriteLine("The Story grid: What good Editors know by Shawn Coyne");
             // page 25
-            list.Add("volubly");
+            list.Add("volubly"); // not found
             list.Add("tenet");
             // page 27
             list.Add("quibbles");
@@ -37,9 +37,13 @@ namespace ConsoleDictionary2jun2024
             list.Add("stumped");
             // page 87
             list.Add("laced");
+            // page 90
+            list.Add("uncanny");
             // page 91
             list.Add("succubus");
             list.Add("attain");
+            // page 101
+            list.Add("rave");
             // page 117
             list.Add("contention");
             list.Add("recedes");
@@ -48,9 +52,9 @@ namespace ConsoleDictionary2jun2024
             // page 121
             list.Add("mendacity");
             // page 122
-            list.Add("extenuation");
+            list.Add("extenuation"); // not found
             list.Add("nether");
-            list.Add("venality");
+            list.Add("venality"); // not found
             // page 126
 
             foreach (string word in list)

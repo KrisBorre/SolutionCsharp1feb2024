@@ -35,9 +35,13 @@ namespace ConsoleHttpClientDictionary2jun2024
             //list.Add("stumped");
             //// page 87
             //list.Add("laced");
+            //// page 90
+            //list.Add("uncanny");
             //// page 91
             //list.Add("succubus");
             //list.Add("attain");
+            //// page 101
+            //list.Add("rave");
             //// page 117
             //list.Add("contention");
             //list.Add("recedes");

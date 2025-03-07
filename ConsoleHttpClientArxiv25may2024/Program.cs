@@ -185,7 +185,9 @@ namespace ConsoleHttpClientArxiv25may2024
                                                 if (existingArticle.Title == item.ToString())
                                                 {
                                                     alreadyExists = true;
+                                                    Console.ForegroundColor = ConsoleColor.Red;
                                                     Console.WriteLine("The article with title '" + item.ToString() + "' already exists in the database!");
+                                                    Console.ResetColor();
                                                 }
                                             }
                                         }
